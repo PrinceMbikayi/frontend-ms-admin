@@ -1,0 +1,611 @@
+/* Missions Page Styles */
+.missions-page {
+  padding: var(--spacing-lg);
+  padding-top: calc(64px + var(--spacing-lg)); /* Hauteur de la topbar + padding */
+  min-height: 100vh;
+  background-color: var(--background-default);
+}
+
+.missions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.page-title {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.add-button {
+  background: linear-gradient(135deg, var(--primary-main) 0%, var(--primary-dark) 100%);
+  color: white;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-weight: 500;
+  text-transform: none;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-main) 100%);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Table View */
+.missions-table-container {
+  background: var(--surface-paper);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid var(--divider);
+}
+
+.data-grid {
+  border: none;
+  min-height: 600px;
+}
+
+.data-grid .MuiDataGrid-root {
+  border: none;
+}
+
+.data-grid .MuiDataGrid-columnHeaders {
+  background-color: var(--background-paper);
+  border-bottom: 2px solid var(--divider);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.data-grid .MuiDataGrid-columnHeaderTitle {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.data-grid .MuiDataGrid-row {
+  border-bottom: 1px solid var(--divider);
+  transition: background-color 0.2s ease;
+}
+
+.data-grid .MuiDataGrid-row:hover {
+  background-color: var(--action-hover);
+}
+
+.data-grid .MuiDataGrid-row.Mui-selected {
+  background-color: var(--primary-light);
+}
+
+.data-grid .MuiDataGrid-row.Mui-selected:hover {
+  background-color: var(--primary-light);
+}
+
+.data-grid .MuiDataGrid-cell {
+  border-bottom: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.data-grid .MuiDataGrid-cell:focus {
+  outline: 2px solid var(--primary-main);
+  outline-offset: -2px;
+}
+
+.data-grid .MuiDataGrid-toolbarContainer {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--divider);
+  background-color: var(--background-paper);
+}
+
+.data-grid .MuiDataGrid-footerContainer {
+  border-top: 1px solid var(--divider);
+  background-color: var(--background-paper);
+}
+
+/* Cards View */
+.missions-grid {
+  margin-top: var(--spacing-md);
+}
+
+.mission-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white !important;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--divider);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.mission-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.mission-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-sm);
+  gap: var(--spacing-sm);
+}
+
+.mission-title {
+  font-weight: 600;
+  color: black !important;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.mission-description {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: black !important;
+}
+
+.mission-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.mission-detail-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: black !important;
+}
+
+.mission-detail-item svg {
+  color: var(--primary-main);
+}
+
+.mission-participants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--divider);
+  color: black !important;
+}
+
+.mission-participants .MuiTypography-root {
+  color: black !important;
+}
+
+.mission-card .MuiCardContent-root {
+  background-color: white !important;
+}
+
+.mission-card .MuiCardContent-root * {
+  color: black !important;
+}
+
+.mission-card .MuiCardActions-root {
+  background-color: white !important;
+}
+
+.mission-card .MuiCardActions-root .MuiButton-root {
+  color: var(--primary-main) !important;
+}
+
+.mission-card .MuiIconButton-root {
+  color: var(--error-main) !important;
+}
+
+.mission-card-actions {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: white !important;
+  border-top: 1px solid var(--divider);
+  margin-top: auto;
+}
+
+/* Dialog Styles */
+.mission-dialog .MuiDialog-paper {
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+.mission-dialog .MuiDialogTitle-root {
+  background: linear-gradient(135deg, var(--primary-main) 0%, var(--primary-dark) 100%);
+  color: black;
+  font-weight: 600;
+  padding: var(--spacing-lg);
+}
+
+.mission-dialog .MuiDialogContent-root {
+  padding: var(--spacing-lg);
+}
+
+.mission-dialog .MuiDialogActions-root {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--divider);
+  background-color: var(--background-paper);
+}
+
+.dialog-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.dialog-form .MuiTextField-root,
+.dialog-form .MuiFormControl-root {
+  margin: 0;
+}
+
+.dialog-form .MuiTextField-root[multiline] {
+  grid-column: 1 / -1;
+}
+
+/* Styles spécifiques pour le modal de mission */
+.mission-dialog .dialog-form .MuiInputLabel-root {
+  color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiOutlinedInput-root {
+  color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiSelect-root {
+  color: white !important;
+}
+
+.mission-dialog .dialog-form .MuiSelect-icon {
+  color: white !important;
+}
+
+/* Chip Styles */
+.MuiChip-root {
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+}
+
+.MuiChip-colorSuccess {
+  background-color: var(--success-light);
+  color: var(--success-dark);
+}
+
+.MuiChip-colorError {
+  background-color: var(--error-light);
+  color: var(--error-dark);
+}
+
+.MuiChip-colorWarning {
+  background-color: var(--warning-light);
+  color: var(--warning-dark);
+}
+
+.MuiChip-colorPrimary {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.MuiChip-colorInfo {
+  background-color: var(--info-light);
+  color: var(--info-dark);
+}
+
+.MuiChip-colorDefault {
+  background-color: var(--grey-100);
+  color: var(--grey-700);
+}
+
+/* Action Icons */
+.MuiDataGrid-actionsCell .MuiIconButton-root {
+  padding: var(--spacing-xs);
+  margin: 0 2px;
+  transition: all 0.2s ease;
+}
+
+.MuiDataGrid-actionsCell .MuiIconButton-root:hover {
+  background-color: var(--action-hover);
+  transform: scale(1.1);
+}
+
+/* View Mode Toggle */
+.header-actions .MuiButton-root {
+  text-transform: none;
+  border-radius: var(--border-radius-sm);
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid var(--divider) !important;
+}
+
+.header-actions .MuiButton-outlined {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid var(--divider) !important;
+}
+
+.header-actions .MuiButton-contained {
+  background-color: var(--primary-main) !important;
+  color: white !important;
+  border: 1px solid var(--primary-main) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .missions-page {
+    padding: var(--spacing-md);
+  }
+  
+  .missions-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-sm);
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .header-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .add-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .dialog-form {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .data-grid {
+    min-height: 400px;
+  }
+  
+  .missions-grid {
+    margin-top: var(--spacing-sm);
+  }
+  
+  .mission-card {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .missions-page {
+    padding: var(--spacing-sm);
+  }
+  
+  .page-title {
+    font-size: 1.25rem;
+  }
+  
+  .missions-table-container,
+  .mission-card {
+    border-radius: var(--border-radius-md);
+  }
+  
+  .mission-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .mission-participants {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .missions-page {
+    background-color: var(--background-default-dark);
+  }
+  
+  .page-title {
+    color: var(--text-primary-dark);
+  }
+  
+  .missions-table-container,
+  .mission-card {
+    background: var(--surface-paper-dark);
+    border-color: var(--divider-dark);
+  }
+  
+  .mission-title {
+    color: var(--text-primary-dark);
+  }
+  
+  .mission-detail-item {
+    color: var(--text-secondary-dark);
+  }
+  
+  .data-grid .MuiDataGrid-columnHeaders {
+    background-color: var(--background-paper-dark);
+    border-bottom-color: var(--divider-dark);
+    color: var(--text-primary-dark);
+  }
+  
+  .data-grid .MuiDataGrid-row {
+    border-bottom-color: var(--divider-dark);
+  }
+  
+  .data-grid .MuiDataGrid-row:hover {
+    background-color: var(--action-hover-dark);
+  }
+  
+  .data-grid .MuiDataGrid-cell {
+    color: var(--text-primary-dark);
+  }
+  
+  .data-grid .MuiDataGrid-toolbarContainer,
+  .data-grid .MuiDataGrid-footerContainer,
+  .mission-card-actions {
+    background-color: var(--background-paper-dark);
+    border-color: var(--divider-dark);
+  }
+  
+  .mission-dialog .MuiDialogActions-root {
+    background-color: var(--background-paper-dark);
+    border-top-color: var(--divider-dark);
+  }
+  
+  .mission-participants {
+    border-top-color: var(--divider-dark);
+  }
+  
+  .MuiChip-colorDefault {
+    background-color: var(--grey-800);
+    color: var(--grey-300);
+  }
+}
+
+/* Loading States */
+.data-grid .MuiDataGrid-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .data-grid .MuiDataGrid-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Accessibility */
+.missions-page *:focus-visible {
+  outline: 2px solid var(--primary-main);
+  outline-offset: 2px;
+}
+
+.MuiDataGrid-actionsCell .MuiIconButton-root:focus-visible,
+.mission-card-actions .MuiIconButton-root:focus-visible {
+  outline: 2px solid var(--primary-main);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .missions-page {
+    padding: 0;
+  }
+  
+  .missions-header {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .header-actions {
+    display: none;
+  }
+  
+  .missions-table-container,
+  .mission-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  .data-grid .MuiDataGrid-toolbarContainer {
+    display: none;
+  }
+  
+  .MuiDataGrid-actionsCell,
+  .mission-card-actions {
+    display: none;
+  }
+  
+  .missions-grid {
+    display: block;
+  }
+  
+  .mission-card {
+    break-inside: avoid;
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.missions-table-container,
+.missions-grid {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.mission-card {
+  animation: fadeIn 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.mission-card:nth-child(1) { animation-delay: 0.1s; }
+.mission-card:nth-child(2) { animation-delay: 0.2s; }
+.mission-card:nth-child(3) { animation-delay: 0.3s; }
+.mission-card:nth-child(4) { animation-delay: 0.4s; }
+.mission-card:nth-child(5) { animation-delay: 0.5s; }
+.mission-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .add-button,
+  .data-grid .MuiDataGrid-row,
+  .MuiDataGrid-actionsCell .MuiIconButton-root,
+  .mission-card {
+    transition: none;
+  }
+  
+  .missions-table-container,
+  .missions-grid,
+  .mission-card {
+    animation: none;
+  }
+  
+  .add-button:hover,
+  .mission-card:hover,
+  .MuiDataGrid-actionsCell .MuiIconButton-root:hover {
+    transform: none;
+  }
+}

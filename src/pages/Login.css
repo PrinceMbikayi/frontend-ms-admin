@@ -1,0 +1,368 @@
+/* Login Page Styles */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-dark) 100%
+  );
+  padding: var(--spacing-lg);
+}
+
+.login-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1920&h=1080&fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 440px;
+  background: var(--color-surface) !important;
+  border-radius: var(--border-radius-xl) !important;
+  box-shadow: var(--shadow-xl) !important;
+  border: 1px solid var(--color-border) !important;
+  backdrop-filter: blur(10px);
+}
+
+.login-content {
+  padding: var(--spacing-xl) !important;
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.logo-icon {
+  color: var(--color-primary) !important;
+  font-size: 3rem !important;
+}
+
+.logo-text {
+  color: var(--color-text-primary) !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+}
+
+.login-title {
+  color: var(--color-text-primary) !important;
+  font-weight: 600 !important;
+  margin-bottom: var(--spacing-sm) !important;
+}
+
+.login-subtitle {
+  color: var(--color-text-secondary) !important;
+  line-height: 1.5;
+}
+
+/* Demo Alert */
+.demo-alert {
+  margin-bottom: var(--spacing-lg) !important;
+  background: var(--color-info-light) !important;
+  border: 1px solid var(--color-info) !important;
+  border-radius: var(--border-radius-md) !important;
+}
+
+.demo-alert .MuiAlert-message {
+  color: var(--color-info-dark) !important;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.demo-alert .MuiButton-root {
+  color: var(--color-info-dark) !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+/* Error Alert */
+.error-alert {
+  margin-bottom: var(--spacing-lg) !important;
+  background: var(--color-error-light) !important;
+  border: 1px solid var(--color-error) !important;
+  border-radius: var(--border-radius-md) !important;
+}
+
+.error-alert .MuiAlert-message {
+  color: var(--color-error-dark) !important;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.login-input {
+  background: var(--color-background) !important;
+}
+
+.login-input .MuiOutlinedInput-root {
+  border-radius: var(--border-radius-md) !important;
+  background: var(--color-background) !important;
+  transition: all 0.2s ease !important;
+}
+
+.login-input .MuiOutlinedInput-root:hover {
+  background: var(--color-surface) !important;
+}
+
+.login-input .MuiOutlinedInput-root.Mui-focused {
+  background: var(--color-surface) !important;
+  box-shadow: 0 0 0 2px var(--color-primary-light) !important;
+}
+
+.login-input .MuiInputLabel-root {
+  color: var(--color-text-secondary) !important;
+}
+
+.login-input .MuiInputLabel-root.Mui-focused {
+  color: var(--color-primary) !important;
+}
+
+.login-input .MuiOutlinedInput-input {
+  color: var(--color-text-primary) !important;
+  padding: var(--spacing-md) var(--spacing-sm) !important;
+}
+
+.login-input .MuiFormHelperText-root {
+  color: var(--color-error) !important;
+  margin-left: 0 !important;
+  margin-top: var(--spacing-xs) !important;
+}
+
+.input-icon {
+  color: var(--color-text-secondary) !important;
+}
+
+.login-button {
+  background: var(--color-primary) !important;
+  color: white !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border-radius: var(--border-radius-md) !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  text-transform: none !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: all 0.2s ease !important;
+}
+
+.login-button:hover {
+  background: var(--color-primary-dark) !important;
+  box-shadow: var(--shadow-lg) !important;
+  transform: translateY(-1px);
+}
+
+.login-button:disabled {
+  background: var(--color-text-disabled) !important;
+  color: var(--color-text-secondary) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Divider */
+.login-divider {
+  margin: var(--spacing-lg) 0 !important;
+}
+
+.login-divider .MuiDivider-wrapper {
+  padding: 0 var(--spacing-md) !important;
+}
+
+/* Register Section */
+.register-section {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.register-text {
+  color: var(--color-text-secondary) !important;
+  margin-bottom: var(--spacing-xs) !important;
+}
+
+.register-link {
+  color: var(--color-primary) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  transition: color 0.2s ease !important;
+}
+
+.register-link:hover {
+  color: var(--color-primary-dark) !important;
+  text-decoration: underline !important;
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-text {
+  color: var(--color-text-secondary) !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    padding: var(--spacing-md);
+  }
+  
+  .login-card {
+    max-width: 100%;
+  }
+  
+  .login-content {
+    padding: var(--spacing-lg) !important;
+  }
+  
+  .logo-text {
+    font-size: 1.75rem !important;
+  }
+  
+  .login-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: var(--spacing-sm);
+  }
+  
+  .login-content {
+    padding: var(--spacing-md) !important;
+  }
+  
+  .login-logo {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .logo-text {
+    font-size: 1.5rem !important;
+  }
+  
+  .login-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .demo-alert .MuiAlert-message {
+    font-size: 0.8rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .login-card {
+    background: var(--color-surface-dark, #1e1e1e) !important;
+    border-color: var(--color-border-dark, #333) !important;
+  }
+  
+  .logo-text,
+  .login-title {
+    color: var(--color-text-primary-dark, #fff) !important;
+  }
+  
+  .login-subtitle,
+  .register-text,
+  .footer-text {
+    color: var(--color-text-secondary-dark, #ccc) !important;
+  }
+  
+  .login-input {
+    background: var(--color-background-dark, #121212) !important;
+  }
+  
+  .login-input .MuiOutlinedInput-root {
+    background: var(--color-background-dark, #121212) !important;
+    border-color: var(--color-border-dark, #333) !important;
+  }
+  
+  .login-input .MuiOutlinedInput-root:hover {
+    background: var(--color-surface-dark, #1e1e1e) !important;
+  }
+  
+  .login-input .MuiInputLabel-root {
+    color: var(--color-text-secondary-dark, #ccc) !important;
+  }
+  
+  .login-input .MuiOutlinedInput-input {
+    color: var(--color-text-primary-dark, #fff) !important;
+  }
+  
+  .input-icon {
+    color: var(--color-text-secondary-dark, #ccc) !important;
+  }
+  
+  .login-footer {
+    border-top-color: var(--color-border-dark, #333);
+  }
+}
+
+/* Animation */
+.login-card {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus styles for accessibility */
+.login-button:focus,
+.register-link:focus {
+  outline: 2px solid var(--color-primary) !important;
+  outline-offset: 2px !important;
+}
+
+/* Loading state */
+.login-button .MuiCircularProgress-root {
+  color: inherit !important;
+}
+
+/* Input validation states */
+.login-input .MuiOutlinedInput-root.Mui-error {
+  border-color: var(--color-error) !important;
+}
+
+.login-input .MuiOutlinedInput-root.Mui-error:hover {
+  border-color: var(--color-error) !important;
+}
+
+.login-input .MuiInputLabel-root.Mui-error {
+  color: var(--color-error) !important;
+}

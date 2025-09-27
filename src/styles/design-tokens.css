@@ -1,0 +1,207 @@
+/* Design Tokens - Mission Sport Admin */
+
+:root {
+  /* Colors - Primary */
+  --primary-green: #1976D2;
+  --primary-green-light: #64B5F6;
+  --primary-green-dark: #1565C0;
+  --primary-green-50: rgba(25, 118, 210, 0.05);
+  --primary-green-100: rgba(25, 118, 210, 0.1);
+  --primary-green-200: rgba(25, 118, 210, 0.2);
+  --primary-green-300: rgba(25, 118, 210, 0.3);
+  --primary-green-500: rgba(25, 118, 210, 0.5);
+  --primary-green-700: rgba(25, 118, 210, 0.7);
+  --primary-green-900: rgba(25, 118, 210, 0.9);
+  
+  /* Colors - Accent */
+  --accent-orange: #FF9800;
+  --accent-orange-light: #FFB74D;
+  --accent-orange-dark: #F57C00;
+  --accent-orange-50: rgba(255, 152, 0, 0.05);
+  --accent-orange-100: rgba(255, 152, 0, 0.1);
+  --accent-orange-200: rgba(255, 152, 0, 0.2);
+  --accent-orange-300: rgba(255, 152, 0, 0.3);
+  --accent-orange-500: rgba(255, 152, 0, 0.5);
+  --accent-orange-700: rgba(255, 152, 0, 0.7);
+  --accent-orange-900: rgba(255, 152, 0, 0.9);
+  
+  /* Colors - Neutral */
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  
+  /* Colors - Semantic */
+  --success: #4CAF50;
+  --success-light: #81C784;
+  --success-dark: #388E3C;
+  --warning: #FF9800;
+  --warning-light: #FFB74D;
+  --warning-dark: #F57C00;
+  --error: #F44336;
+  --error-light: #E57373;
+  --error-dark: #D32F2F;
+  --info: #2196F3;
+  --info-light: #64B5F6;
+  --info-dark: #1976D2;
+  
+  /* Admin Specific Colors */
+  --admin-sidebar: #87CEEB; /* Bleu ciel pour la sidebar */
+  --admin-sidebar-hover: #7EC8E3; /* Bleu ciel plus clair au hover */
+  --admin-sidebar-active: var(--primary-green);
+  --admin-topbar: #87CEEB; /* Bleu ciel pour la topbar */
+  --admin-background: #ffffff; /* Blanc pour le contenu principal */
+  --admin-text: #000000; /* Noir pour le texte */
+  --admin-card: var(--white);
+  --admin-border: #e2e8f0;
+  
+  /* Typography */
+  --font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.4;
+  --line-height-relaxed: 1.6;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Z-Index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  /* Layout */
+  --sidebar-width: 280px;
+  --sidebar-collapsed-width: 80px;
+  --topbar-height: 70px;
+  --content-max-width: 1200px;
+  
+  /* Color System Mapping */
+  --color-primary: var(--primary-green);
+  --color-primary-light: var(--primary-green-100);
+  --color-primary-dark: var(--primary-green-dark);
+  --color-secondary: var(--accent-orange);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-info: var(--info);
+  
+  /* Surface Colors */
+  --color-surface: var(--white);
+  --color-background: var(--gray-50);
+  --color-border: var(--gray-300);
+  
+  /* Text Colors */
+  --color-text-primary: var(--gray-900);
+  --color-text-secondary: var(--gray-600);
+  --color-text-disabled: var(--gray-400);
+  
+  /* Dark Mode Colors */
+  --color-surface-dark: #1e1e1e;
+  --color-background-dark: #121212;
+  --color-border-dark: #333;
+  --color-text-primary-dark: #fff;
+  --color-text-secondary-dark: #ccc;
+  --color-primary-light-dark: rgba(25, 118, 210, 0.1);
+  
+  /* Additional Color Variables for Reports */
+  --background-default: var(--gray-50);
+  --background-default-dark: #121212;
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --surface-paper: var(--white);
+  --surface-paper-dark: #1e1e1e;
+  --divider: var(--gray-300);
+  --divider-dark: #333;
+  --primary-main: var(--primary-green);
+  --primary-light: var(--primary-green-100);
+  --primary-dark: var(--primary-green-dark);
+  --secondary-main: var(--accent-orange);
+  --success-main: var(--success);
+  --success-light: var(--success-light);
+  --success-dark: var(--success-dark);
+  --error-main: var(--error);
+  --error-light: var(--error-light);
+  --error-dark: var(--error-dark);
+  --warning-main: var(--warning);
+  --warning-light: var(--warning-light);
+  --warning-dark: var(--warning-dark);
+  --border-radius-xs: 2px;
+  --border-radius-sm: var(--radius-sm);
+  --border-radius-lg: var(--radius-lg);
+  --background-paper: var(--gray-100);
+  
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
+
+/* Dark mode support - Désactivé pour maintenir les couleurs personnalisées */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --admin-background: #0f172a;
+    --admin-card: #1e293b;
+    --admin-border: #334155;
+    --gray-50: #1e293b;
+    --gray-100: #334155;
+    --gray-200: #475569;
+    --gray-300: #64748b;
+    --gray-400: #94a3b8;
+    --gray-500: #cbd5e1;
+    --gray-600: #e2e8f0;
+    --gray-700: #f1f5f9;
+    --gray-800: #f8fafc;
+    --gray-900: #ffffff;
+  }
+} */

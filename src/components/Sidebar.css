@@ -1,0 +1,209 @@
+/* Sidebar Styles */
+.sidebar {
+  background: var(--admin-sidebar);
+  color: var(--admin-text);
+  border-right: 1px solid var(--admin-border);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebar-header {
+  padding: var(--spacing-lg) var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  background: var(--admin-sidebar);
+  color: var(--admin-text);
+  border-bottom: 1px solid var(--admin-border);
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo-icon {
+  color: var(--color-primary) !important;
+  font-size: 2rem !important;
+}
+
+.logo-text {
+  color: var(--color-text-primary) !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+  white-space: nowrap;
+}
+
+.collapse-button {
+  color: var(--color-text-secondary) !important;
+  background: var(--color-background) !important;
+  border: 1px solid var(--color-border) !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.collapse-button:hover {
+  background: var(--color-primary-light) !important;
+  color: var(--color-primary) !important;
+}
+
+.sidebar-menu {
+  flex: 1;
+  padding: var(--spacing-sm) 0;
+  overflow-y: auto;
+}
+
+.menu-item {
+  margin: 2px var(--spacing-sm);
+  border-radius: var(--border-radius-md) !important;
+  transition: all 0.2s ease !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.menu-item:hover {
+  background: var(--color-primary-light) !important;
+  color: var(--color-primary) !important;
+}
+
+.menu-item.active {
+  background: var(--color-primary) !important;
+  color: white !important;
+  box-shadow: var(--shadow-sm);
+}
+
+.menu-item.active .menu-icon {
+  color: white !important;
+}
+
+.menu-item.active .menu-text {
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+.menu-icon {
+  color: inherit !important;
+  transition: color 0.2s ease;
+}
+
+.menu-text {
+  color: inherit !important;
+  transition: color 0.2s ease;
+}
+
+.menu-text .MuiListItemText-primary {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.sidebar-footer {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-background);
+}
+
+.version-text {
+  color: var(--color-text-secondary) !important;
+  text-align: center;
+  display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 280px !important;
+  }
+  
+  .sidebar-header {
+    padding: var(--spacing-md);
+  }
+  
+  .collapse-button {
+    display: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background: var(--color-surface-dark, #1e1e1e);
+    border-right-color: var(--color-border-dark, #333);
+  }
+  
+  .sidebar-header {
+    background: var(--color-surface-dark, #1e1e1e);
+    border-bottom-color: var(--color-border-dark, #333);
+  }
+  
+  .logo-text {
+    color: var(--color-text-primary-dark, #fff) !important;
+  }
+  
+  .menu-item {
+    color: var(--color-text-secondary-dark, #ccc) !important;
+  }
+  
+  .menu-item:hover {
+    background: var(--color-primary-light-dark, rgba(25, 118, 210, 0.1)) !important;
+  }
+  
+  .sidebar-footer {
+    background: var(--color-background-dark, #121212);
+    border-top-color: var(--color-border-dark, #333);
+  }
+  
+  .version-text {
+    color: var(--color-text-secondary-dark, #ccc) !important;
+  }
+}
+
+/* Scrollbar styling */
+.sidebar-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* Animation for menu items */
+.menu-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.menu-item:hover::before {
+  left: 100%;
+}
+
+.menu-item.active::before {
+  display: none;
+}
