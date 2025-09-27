@@ -1,7 +1,9 @@
-/* Reports Page Styles */
+è/* Reports Page Styles */
 .reports-page {
   padding: var(--spacing-lg);
-  padding-top: calc(64px + var(--spacing-lg)); /* Hauteur de la topbar + padding */
+  padding-top: calc(
+    64px + var(--spacing-lg)
+  ); /* Hauteur de la topbar + padding */
   min-height: 100vh;
   background-color: var(--background-default);
 }
@@ -176,7 +178,11 @@
 
 /* Financial Summary */
 .financial-summary {
-  background: linear-gradient(135deg, var(--success-light) 0%, var(--success-main) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--success-light) 0%,
+    var(--success-main) 100%
+  );
   color: white;
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-lg);
@@ -252,15 +258,24 @@
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-.reports-page .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+.reports-page
+  .MuiTextField-root
+  .MuiOutlinedInput-root
+  .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.reports-page .MuiTextField-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+.reports-page
+  .MuiTextField-root
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.reports-page .MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.reports-page
+  .MuiTextField-root
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
   border-color: #ffffff !important;
 }
 
@@ -281,8 +296,16 @@
   color: #ffffff !important;
 }
 
+.reports-page .MuiFormControl-root .MuiInputLabel-root.MuiInputLabel-shrink {
+  color: #ffffff !important;
+}
+
 .reports-page .MuiFormControl-root .MuiSelect-root {
   color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.reports-page .MuiFormControl-root .MuiOutlinedInput-root {
   background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
@@ -290,16 +313,68 @@
   border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-.reports-page .MuiFormControl-root .MuiSelect-root:hover .MuiOutlinedInput-notchedOutline {
+.reports-page
+  .MuiFormControl-root
+  .MuiSelect-root:hover
+  .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.reports-page .MuiFormControl-root .MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.reports-page
+  .MuiFormControl-root
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.reports-page
+  .MuiFormControl-root
+  .MuiSelect-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff !important;
+}
+
+.reports-page
+  .MuiFormControl-root
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
   border-color: #ffffff !important;
 }
 
 .reports-page .MuiFormControl-root .MuiSelect-icon {
   color: #ffffff !important;
+}
+
+.reports-page .MuiFormControl-root .MuiSelect-select {
+  color: #ffffff !important;
+}
+
+/* Menu dropdown styles */
+.reports-page .MuiPaper-root.MuiMenu-paper {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.reports-page .MuiMenuItem-root {
+  color: #ffffff !important;
+}
+
+.reports-page .MuiMenuItem-root:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Global styles for Select menus when Reports page is active */
+body:has(.reports-page) .MuiPaper-root.MuiMenu-paper {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+body:has(.reports-page) .MuiMenuItem-root {
+  color: #ffffff !important;
+}
+
+body:has(.reports-page) .MuiMenuItem-root:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Export Actions */
@@ -312,11 +387,13 @@
 /* Button Styles for Reports Page */
 .reports-page .MuiButton-root {
   color: #ffffff !important;
+  background-color: transparent !important;
 }
 
 .reports-page .MuiButton-outlined {
   border-color: rgba(255, 255, 255, 0.3) !important;
   color: #ffffff !important;
+  background-color: transparent !important;
 }
 
 .reports-page .MuiButton-outlined:hover {
@@ -369,7 +446,11 @@
 }
 
 .export-button.primary {
-  background: linear-gradient(135deg, var(--primary-main) 0%, var(--primary-dark) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-main) 0%,
+    var(--primary-dark) 100%
+  );
   color: white;
 }
 
@@ -427,13 +508,17 @@
 }
 
 .kpi-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-main), var(--secondary-main));
+  background: linear-gradient(
+    90deg,
+    var(--primary-main),
+    var(--secondary-main)
+  );
 }
 
 .kpi-header {
@@ -519,7 +604,7 @@
   .kpi-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-  
+
   .chart-container {
     height: 250px;
   }
@@ -529,46 +614,46 @@
   .reports-page {
     padding: var(--spacing-md);
   }
-  
+
   .reports-header {
     flex-direction: column;
     align-items: stretch;
     gap: var(--spacing-sm);
   }
-  
+
   .page-title {
     font-size: 1.5rem;
     text-align: center;
   }
-  
+
   .header-actions {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .filter-row {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .export-actions {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .kpi-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
   }
-  
+
   .kpi-value {
     font-size: 2rem;
   }
-  
+
   .chart-container {
     height: 200px;
   }
-  
+
   .stat-card .MuiCardContent-root,
   .chart-card .MuiCardContent-root {
     padding: var(--spacing-md);
@@ -579,29 +664,29 @@
   .reports-page {
     padding: var(--spacing-sm);
   }
-  
+
   .page-title {
     font-size: 1.25rem;
   }
-  
+
   .header-actions {
     gap: var(--spacing-xs);
   }
-  
+
   .header-actions .MuiTextField-root,
   .header-actions .MuiFormControl-root {
     min-width: 100px;
   }
-  
+
   .kpi-value {
     font-size: 1.75rem;
   }
-  
+
   .financial-summary .summary-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-sm);
   }
-  
+
   .financial-summary .summary-value {
     font-size: 1.5rem;
   }
@@ -612,11 +697,11 @@
   .reports-page {
     background-color: var(--background-default-dark);
   }
-  
+
   .page-title {
     color: var(--text-primary-dark);
   }
-  
+
   .stat-card,
   .chart-card,
   .top-users-card,
@@ -624,61 +709,61 @@
     background: var(--surface-paper-dark);
     border-color: var(--divider-dark);
   }
-  
+
   .stat-value,
   .chart-title,
   .kpi-value {
     color: var(--text-primary-dark);
   }
-  
+
   .top-users-card .MuiListItemText-primary {
     color: var(--text-primary-dark);
   }
-  
+
   .top-users-card .MuiListItemText-secondary {
     color: var(--text-secondary-dark);
   }
-  
+
   .kpi-title,
   .progress-label {
     color: var(--text-secondary-dark);
   }
-  
+
   .report-filters {
     background: var(--surface-paper-dark);
     border-color: var(--divider-dark);
   }
-  
+
   .filter-label {
     color: var(--text-primary-dark);
   }
-  
+
   .export-button.secondary {
     border-color: var(--divider-dark);
     color: var(--text-secondary-dark);
   }
-  
+
   .chart-container .recharts-cartesian-axis-tick-value {
     fill: var(--text-secondary-dark);
   }
-  
+
   .recharts-tooltip-content {
     background: var(--surface-paper-dark) !important;
     border-color: var(--divider-dark) !important;
   }
-  
+
   .recharts-tooltip-label {
     color: var(--text-primary-dark) !important;
   }
-  
+
   .recharts-tooltip-item {
     color: var(--text-secondary-dark) !important;
   }
-  
+
   .recharts-legend-item-text {
     color: var(--text-primary-dark) !important;
   }
-  
+
   .recharts-pie-label-text {
     fill: var(--text-primary-dark) !important;
   }
@@ -723,15 +808,15 @@
   .reports-page {
     padding: 0;
   }
-  
+
   .reports-header {
     margin-bottom: var(--spacing-md);
   }
-  
+
   .header-actions {
     display: none;
   }
-  
+
   .stat-card,
   .chart-card,
   .kpi-card {
@@ -740,15 +825,15 @@
     break-inside: avoid;
     margin-bottom: var(--spacing-md);
   }
-  
+
   .chart-container {
     height: 300px;
   }
-  
+
   .kpi-grid {
     display: block;
   }
-  
+
   .kpi-card {
     margin-bottom: var(--spacing-lg);
   }
@@ -784,10 +869,18 @@
   animation-fill-mode: both;
 }
 
-.stat-card:nth-child(1) { animation-delay: 0.1s; }
-.stat-card:nth-child(2) { animation-delay: 0.2s; }
-.stat-card:nth-child(3) { animation-delay: 0.3s; }
-.stat-card:nth-child(4) { animation-delay: 0.4s; }
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.stat-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.stat-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 .chart-card {
   animation: slideIn 0.6s ease-out;
@@ -803,7 +896,7 @@
     transition: none;
     animation: none;
   }
-  
+
   .stat-card:hover,
   .chart-card:hover,
   .export-button:hover {

@@ -495,3 +495,317 @@ input[type="color"]:focus {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Styles spécifiques pour améliorer la lisibilité de la section Paramètres */
+.settings-page {
+  /* Amélioration des cartes */
+  .MuiCard-root {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  
+  .MuiCardContent-root {
+    background-color: transparent !important;
+  }
+  
+  .MuiCardActions-root {
+    background-color: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Amélioration du conteneur des paramètres */
+  .settings-container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+  
+  /* Amélioration des onglets */
+  .settings-tabs {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* Amélioration des accordéons */
+  .MuiAccordion-root {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .MuiAccordionSummary-root {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .MuiAccordionDetails-root {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  /* Amélioration des listes */
+  .MuiList-root {
+    background-color: transparent !important;
+  }
+  
+  .MuiListItem-root {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .MuiListItem-root:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  /* Libellés des cartes en blanc */
+  .MuiTypography-h6 {
+    color: #ffffff !important;
+  }
+  
+  .MuiTypography-subtitle1 {
+    color: #ffffff !important;
+  }
+  
+  .MuiTypography-subtitle2 {
+    color: #ffffff !important;
+  }
+  
+  .MuiTypography-body1 {
+    color: #ffffff !important;
+  }
+  
+  .MuiTypography-body2 {
+    color: #ffffff !important;
+  }
+  
+  /* Champs de saisie en blanc */
+  .MuiTextField-root .MuiInputLabel-root {
+    color: #ffffff !important;
+  }
+  
+  .MuiTextField-root .MuiInputLabel-root.Mui-focused {
+    color: #ffffff !important;
+  }
+  
+  .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-input {
+    color: #ffffff !important;
+  }
+  
+  .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .MuiTextField-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ffffff !important;
+  }
+  
+  /* Champs de sélection (Select) en blanc */
+  .MuiFormControl-root .MuiInputLabel-root {
+    color: #ffffff !important;
+  }
+  
+  .MuiFormControl-root .MuiInputLabel-root.Mui-focused {
+    color: #ffffff !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root {
+    color: #ffffff !important;
+  }
+  
+  .MuiFormControl-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root:hover + .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root.Mui-focused + .MuiOutlinedInput-notchedOutline {
+    border-color: #ffffff !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-icon {
+    color: #ffffff !important;
+  }
+  
+  /* Libellés des FormControlLabel en blanc */
+  .MuiFormControlLabel-root .MuiFormControlLabel-label {
+    color: #ffffff !important;
+  }
+  
+  /* Texte des boutons en blanc */
+  .MuiButton-root {
+    color: #ffffff !important;
+  }
+  
+  /* Icônes en blanc */
+  .MuiSvgIcon-root {
+    color: #ffffff !important;
+  }
+  
+  /* Texte des onglets en blanc */
+  .settings-tabs .MuiTab-root {
+    color: #ffffff !important;
+  }
+  
+  .settings-tabs .MuiTab-root.Mui-selected {
+    color: #ffffff !important;
+  }
+  
+  /* Titre de la page en blanc */
+  .page-title {
+    color: #ffffff !important;
+  }
+  
+  /* Texte des listes en blanc */
+  .MuiListItemText-primary {
+    color: #ffffff !important;
+  }
+  
+  .MuiListItemText-secondary {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* Texte des puces (Chips) en blanc */
+  .MuiChip-root .MuiChip-label {
+    color: #ffffff !important;
+  }
+  
+  .MuiChip-root {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  }
+}
+
+/* Styles globaux pour les menus déroulants qui s'ouvrent en dehors du conteneur */
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root {
+  color: #ffffff !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Styles spécifiques pour la carte Localisation */
+.settings-page .MuiCard-root:has(.MuiTypography-h6:contains("Localisation")) {
+  /* Amélioration spécifique des champs de sélection dans la carte Localisation */
+  .MuiFormControl-root .MuiInputLabel-root {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+  }
+  
+  .MuiFormControl-root .MuiInputLabel-root.Mui-focused {
+    color: #ffffff !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+  }
+  
+  .MuiFormControl-root .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.6) !important;
+    border-width: 2px !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root:hover + .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-root.Mui-focused + .MuiOutlinedInput-notchedOutline {
+    border-color: #ffffff !important;
+    border-width: 2px !important;
+  }
+  
+  .MuiFormControl-root .MuiSelect-icon {
+    color: #ffffff !important;
+  }
+  
+  /* Amélioration du texte sélectionné */
+  .MuiFormControl-root .MuiSelect-select {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+  }
+  
+  /* Amélioration du placeholder */
+  .MuiFormControl-root .MuiSelect-select:empty {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+}
+
+/* Styles globaux spécifiques pour les menus déroulants de la carte Localisation */
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  padding: 12px 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root.Mui-selected {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+body:has(.settings-page) .MuiPaper-root.MuiMenu-paper .MuiMenuItem-root.Mui-selected:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Styles spécifiques pour le bouton de réinitialisation dans la section Paramètres */
+.settings-page .header-actions .MuiButton-outlined {
+  background-color: white !important;
+  color: #1976d2 !important;
+  border: 2px solid #1976d2 !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.settings-page .header-actions .MuiButton-outlined:hover {
+  background-color: #f5f5f5 !important;
+  border-color: #1565c0 !important;
+  color: #1565c0 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-1px) !important;
+}
+
+.settings-page .header-actions .MuiButton-outlined:focus {
+  background-color: white !important;
+  border-color: #1976d2 !important;
+  color: #1976d2 !important;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2) !important;
+}
+
+.settings-page .header-actions .MuiButton-outlined:active {
+  background-color: #e3f2fd !important;
+  transform: translateY(0) !important;
+}
+
+/* Icône du bouton de réinitialisation */
+.settings-page .header-actions .MuiButton-outlined .MuiSvgIcon-root {
+  color: #1976d2 !important;
+  transition: color 0.3s ease !important;
+}
+
+.settings-page .header-actions .MuiButton-outlined:hover .MuiSvgIcon-root {
+  color: #1565c0 !important;
+}
