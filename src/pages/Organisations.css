@@ -1,0 +1,330 @@
+.organisations-page {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header-section {
+  margin-bottom: 24px;
+}
+
+.header-section h1 {
+  color: #1976d2;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.header-section p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+/* Styles pour les cartes de statistiques */
+.organisations-page .MuiCard-root {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.organisations-page .MuiCard-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour le DataGrid */
+.organisations-page .MuiDataGrid-root {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.organisations-page .MuiDataGrid-columnHeaders {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.organisations-page .MuiDataGrid-columnHeaderTitle {
+  font-weight: 600;
+  color: #333;
+}
+
+.organisations-page .MuiDataGrid-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Styles pour les chips de statut */
+.organisations-page .MuiChip-root {
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.organisations-page .MuiChip-colorSuccess {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.organisations-page .MuiChip-colorError {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.organisations-page .MuiChip-colorWarning {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.organisations-page .MuiChip-colorPrimary {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Styles pour le dialog */
+.organisations-page .MuiDialog-paper {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.organisations-page .MuiDialogTitle-root {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.organisations-page .MuiDialogContent-root {
+  padding: 24px;
+}
+
+.organisations-page .MuiDialogActions-root {
+  padding: 16px 24px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Styles pour les onglets */
+.organisations-page .MuiTabs-root {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+.organisations-page .MuiTab-root {
+  font-weight: 500;
+  text-transform: none;
+  min-height: 48px;
+}
+
+.organisations-page .MuiTab-root.Mui-selected {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* Styles pour les formulaires */
+.organisations-page .MuiTextField-root {
+  margin-bottom: 16px;
+}
+
+.organisations-page .MuiFormControl-root {
+  margin-bottom: 16px;
+}
+
+/* Styles pour les listes */
+.organisations-page .MuiList-root {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.organisations-page .MuiListItem-root {
+  border-radius: 8px;
+  margin-bottom: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.organisations-page .MuiListItem-root:last-child {
+  margin-bottom: 0;
+}
+
+/* Styles pour les avatars */
+.organisations-page .MuiAvatar-root {
+  background: linear-gradient(135deg, #1976d2 0%, #42a5f5 100%);
+}
+
+/* Styles pour les boutons */
+.organisations-page .MuiButton-contained {
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3);
+}
+
+.organisations-page .MuiButton-contained:hover {
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.4);
+}
+
+.organisations-page .MuiButton-outlined {
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+/* Styles pour les filtres */
+.organisations-page .MuiPaper-root {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation pour les éléments */
+.organisations-page .MuiCard-root,
+.organisations-page .MuiPaper-root {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .organisations-page {
+    padding: 16px;
+  }
+  
+  .organisations-page .MuiDialogContent-root {
+    padding: 16px;
+  }
+  
+  .organisations-page .MuiDialogActions-root {
+    padding: 12px 16px;
+  }
+}
+
+/* Styles pour les indicateurs de statut */
+.organisations-page .status-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.organisations-page .status-indicator.active {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.organisations-page .status-indicator.suspended {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.organisations-page .status-indicator.pending {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+/* Styles pour les métriques */
+.organisations-page .metric-card {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.organisations-page .metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.organisations-page .metric-label {
+  font-size: 0.875rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Styles pour les actions rapides */
+.organisations-page .quick-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.organisations-page .quick-action-btn {
+  min-width: auto;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+/* Styles pour les badges de notification */
+.organisations-page .notification-badge {
+  position: relative;
+}
+
+.organisations-page .notification-badge::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: #f44336;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Styles pour les tooltips personnalisés */
+.organisations-page .custom-tooltip {
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  max-width: 200px;
+}
+
+/* Styles pour les états de chargement */
+.organisations-page .loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Styles pour les messages d'erreur */
+.organisations-page .error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #f44336;
+  margin-bottom: 16px;
+}
+
+/* Styles pour les messages de succès */
+.organisations-page .success-message {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #4caf50;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,704 @@
+/* Support Page Styles */
+.support-page {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  margin-bottom: 32px;
+}
+
+.header-section h1 {
+  color: #1976d2;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.header-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Statistics Cards */
+.stats-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card .MuiCardContent-root {
+  padding: 20px !important;
+}
+
+.stats-card .MuiAvatar-root {
+  width: 56px;
+  height: 56px;
+}
+
+.stats-card h4 {
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.stats-card .MuiTypography-body2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Tabs */
+.MuiTabs-root {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MuiTab-root {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 1rem;
+  min-height: 48px;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #1976d2;
+}
+
+.MuiTabs-indicator {
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+/* Filters */
+.filters-section {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-section .MuiFormControl-root {
+  margin-bottom: 0;
+}
+
+.filters-section .MuiTextField-root,
+.filters-section .MuiFormControl-root {
+  background: white;
+}
+
+/* DataGrid Customization */
+.MuiDataGrid-root {
+  border: none;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 600;
+  color: #333;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: #f8f9fa;
+}
+
+.MuiDataGrid-row.Mui-selected {
+  background-color: #e3f2fd;
+}
+
+.MuiDataGrid-row.Mui-selected:hover {
+  background-color: #bbdefb;
+}
+
+/* Ticket Cells */
+.ticket-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ticket-number {
+  font-weight: 600;
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.ticket-number:hover {
+  text-decoration: underline;
+}
+
+.ticket-title {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.ticket-category {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* User Cell */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 0.875rem;
+}
+
+.user-info h6 {
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.user-type {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+/* Priority Chips */
+.priority-chip {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.priority-high {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.priority-medium {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.priority-low {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+/* Status Chips */
+.status-chip {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-open {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status-in-progress {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.status-resolved {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.status-closed {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+/* Assignment Chip */
+.assignment-chip {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border: 1px solid #bbdefb;
+}
+
+.unassigned-text {
+  color: #999;
+  font-style: italic;
+}
+
+/* Dialog Customization */
+.MuiDialog-paper {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.MuiDialogTitle-root {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 24px;
+}
+
+.MuiDialogTitle-root h6 {
+  font-weight: 600;
+  color: #333;
+}
+
+.MuiDialogContent-root {
+  padding: 24px;
+}
+
+.MuiDialogActions-root {
+  padding: 16px 24px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Ticket Dialog */
+.ticket-dialog .ticket-header {
+  margin-bottom: 24px;
+}
+
+.ticket-dialog .ticket-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ticket-dialog .ticket-description {
+  color: #666;
+  line-height: 1.6;
+}
+
+.ticket-dialog .responses-section {
+  margin-top: 24px;
+}
+
+.ticket-dialog .response-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.ticket-dialog .response-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.ticket-dialog .response-author {
+  font-weight: 600;
+  color: #333;
+}
+
+.ticket-dialog .response-date {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.ticket-dialog .response-content {
+  color: #333;
+  line-height: 1.6;
+}
+
+.ticket-dialog .internal-note {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+}
+
+.ticket-dialog .add-response {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.ticket-dialog .response-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Info Panel */
+.info-panel {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.info-panel .info-item {
+  margin-bottom: 16px;
+}
+
+.info-panel .info-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.info-panel .info-value {
+  color: #333;
+  font-weight: 500;
+}
+
+.info-panel .info-actions {
+  margin-top: 24px;
+}
+
+.info-panel .info-actions .MuiButton-root {
+  margin-bottom: 8px;
+}
+
+/* FAQ and Guide Cards */
+.content-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.content-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.content-card .card-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.content-card .card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.content-card .card-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.content-card .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Published/Draft Status */
+.published-chip {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.draft-chip {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+/* Rating Display */
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Tags */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag-chip {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-size: 0.75rem;
+  height: 24px;
+}
+
+/* Form Sections */
+.form-section {
+  margin-bottom: 24px;
+}
+
+.form-section .section-title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Switch Controls */
+.switch-control {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Loading States */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  color: #1976d2;
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+}
+
+.empty-state .empty-icon {
+  font-size: 4rem;
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.empty-state .empty-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.empty-state .empty-description {
+  margin-bottom: 24px;
+}
+
+/* Error States */
+.error-alert {
+  margin-bottom: 24px;
+}
+
+.error-alert .MuiAlert-message {
+  font-weight: 500;
+}
+
+/* Success States */
+.success-alert {
+  margin-bottom: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .support-page {
+    padding: 16px;
+  }
+  
+  .header-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .stats-card .MuiCardContent-root {
+    padding: 16px !important;
+  }
+  
+  .stats-card .MuiAvatar-root {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stats-card h4 {
+    font-size: 1.5rem;
+  }
+  
+  .filters-section {
+    padding: 12px;
+  }
+  
+  .MuiDialogContent-root {
+    padding: 16px;
+  }
+  
+  .ticket-dialog .ticket-title {
+    font-size: 1.25rem;
+  }
+  
+  .info-panel {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .support-page {
+    padding: 12px;
+  }
+  
+  .header-section h1 {
+    font-size: 1.5rem;
+  }
+  
+  .stats-card h4 {
+    font-size: 1.25rem;
+  }
+  
+  .MuiTab-root {
+    min-width: auto;
+    padding: 12px 8px;
+    font-size: 0.875rem;
+  }
+  
+  .content-card .card-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Focus States */
+.MuiButton-root:focus,
+.MuiTextField-root:focus-within,
+.MuiSelect-root:focus-within {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .support-page {
+    background-color: white;
+  }
+  
+  .stats-card,
+  .filters-section,
+  .MuiDataGrid-root {
+    border: 2px solid #333;
+  }
+  
+  .priority-chip,
+  .status-chip,
+  .assignment-chip {
+    border: 1px solid currentColor;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .stats-card,
+  .content-card {
+    transition: none;
+  }
+  
+  .fade-in,
+  .slide-up {
+    animation: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .support-page {
+    background: white;
+    padding: 0;
+  }
+  
+  .MuiButton-root,
+  .MuiDialogActions-root {
+    display: none;
+  }
+  
+  .stats-card {
+    break-inside: avoid;
+  }
+}

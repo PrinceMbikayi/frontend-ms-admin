@@ -18,13 +18,18 @@ import {
   Dashboard as DashboardIcon,
   People as PeopleIcon,
   Assignment as AssignmentIcon,
+  Business as BusinessIcon,
+  Message as MessageIcon,
   Payment as PaymentIcon,
   Subscriptions as SubscriptionsIcon,
   Assessment as AssessmentIcon,
   Settings as SettingsIcon,
+  ExitToApp as LogoutIcon,
   ChevronLeft as ChevronLeftIcon,
+  ChevronRight as ChevronRightIcon,
   Menu as MenuIcon,
   SportsSoccer as SportsIcon,
+  Support as SupportIcon,
 } from '@mui/icons-material';
 import './Sidebar.css';
 
@@ -48,10 +53,25 @@ const menuItems = [
     path: '/admin/missions',
   },
   {
-    text: 'Paiements',
-    icon: <PaymentIcon />,
-    path: '/admin/payments',
+    text: 'Organisations',
+    icon: <BusinessIcon />,
+    path: '/admin/organisations',
   },
+  {
+      text: 'Messages',
+      icon: <MessageIcon />,
+      path: '/admin/messages'
+    },
+    {
+      text: 'Support',
+      icon: <SupportIcon />,
+      path: '/admin/support'
+    },
+    {
+      text: 'Paiements',
+      icon: <PaymentIcon />,
+      path: '/admin/payments'
+    },
   {
     text: 'Abonnements',
     icon: <SubscriptionsIcon />,

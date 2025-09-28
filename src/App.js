@@ -14,6 +14,9 @@ import Missions from './pages/Missions';
 import Payments from './pages/Payments';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
+import Organisations from './pages/Organisations';
+import Messages from './pages/Messages';
+import Support from './pages/Support';
 import './styles/design-tokens.css';
 import './styles/global.css';
 import './App.css';
@@ -42,7 +45,10 @@ const AppContent = () => {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="users" element={<Users />} />
               <Route path="missions" element={<Missions />} />
-              <Route path="payments" element={<Payments />} />
+                  <Route path="organisations" element={<Organisations />} />
+                  <Route path="messages" element={<Messages />} />
+                  <Route path="support" element={<Support />} />
+                  <Route path="payments" element={<Payments />} />
               <Route path="reports" element={<Reports />} />
               <Route path="settings" element={<Settings />} />
             </Route>

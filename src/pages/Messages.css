@@ -1,0 +1,583 @@
+/* Messages Page Styles */
+.messages-page {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-section h1 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.header-section p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Stats Cards */
+.stats-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stats-card.conversations {
+  border-left-color: #2196f3;
+}
+
+.stats-card.active {
+  border-left-color: #4caf50;
+}
+
+.stats-card.reports {
+  border-left-color: #ff9800;
+}
+
+.stats-card.response-time {
+  border-left-color: #9c27b0;
+}
+
+.stats-card .MuiAvatar-root {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 16px;
+}
+
+.stats-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.stats-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Tabs */
+.MuiTabs-root {
+  background: white;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiTab-root {
+  font-weight: 600;
+  text-transform: none;
+  font-size: 1rem;
+  min-height: 64px;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #1976d2;
+}
+
+/* Filters Section */
+.filters-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.filters-section .MuiTextField-root,
+.filters-section .MuiFormControl-root {
+  margin-bottom: 0;
+}
+
+/* DataGrid Customization */
+.MuiDataGrid-root {
+  border: none;
+  border-radius: 0 0 12px 12px;
+  background: white;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 600;
+}
+
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 600;
+  color: #333;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: #f5f5f5;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 16px;
+}
+
+.MuiDataGrid-cell:focus {
+  outline: none;
+}
+
+/* Conversation Cell Styles */
+.conversation-participants {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.conversation-participants .MuiAvatar-root {
+  width: 36px;
+  height: 36px;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conversation-info h6 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.conversation-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.last-message {
+  max-width: 280px;
+}
+
+.last-message p {
+  margin: 0 0 4px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.last-message span {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Priority and Status Chips */
+.MuiChip-root {
+  font-weight: 500;
+  border-radius: 16px;
+}
+
+.MuiChip-colorError {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.MuiChip-colorWarning {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.MuiChip-colorSuccess {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.MuiChip-colorPrimary {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Tags Display */
+.tags-container {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  max-width: 180px;
+}
+
+.tags-container .MuiChip-root {
+  font-size: 0.7rem;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/* Badge Customization */
+.MuiBadge-badge {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+/* Dialog Styles */
+.MuiDialog-paper {
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.MuiDialogTitle-root {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 24px;
+}
+
+.MuiDialogContent-root {
+  padding: 24px;
+}
+
+.MuiDialogActions-root {
+  padding: 16px 24px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Conversation Dialog */
+.conversation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.conversation-participants-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.conversation-participants-list .MuiChip-root {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.message-composer {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.message-composer .MuiTextField-root {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.message-composer-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+/* Report Dialog */
+.report-info-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.report-info-item {
+  margin-bottom: 16px;
+}
+
+.report-info-item:last-child {
+  margin-bottom: 0;
+}
+
+.report-info-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.report-info-value {
+  color: #333;
+  font-size: 1rem;
+}
+
+.report-actions {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.report-actions .MuiButton-root {
+  margin-bottom: 12px;
+}
+
+.report-actions .MuiButton-root:last-child {
+  margin-bottom: 0;
+}
+
+/* Alert Customization */
+.MuiAlert-root {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: #e8f5e8;
+  color: #2e7d32;
+}
+
+.MuiAlert-standardError {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.MuiAlert-standardWarning {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.MuiAlert-standardInfo {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Loading States */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  color: #1976d2;
+}
+
+/* Empty States */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.empty-state .MuiSvgIcon-root {
+  font-size: 4rem;
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.empty-state h6 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .messages-page {
+    padding: 16px;
+  }
+  
+  .header-section {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .header-section h1 {
+    font-size: 2rem;
+  }
+  
+  .stats-card {
+    padding: 20px;
+  }
+  
+  .stats-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .filters-section {
+    padding: 16px;
+  }
+  
+  .conversation-participants {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .last-message {
+    max-width: 200px;
+  }
+  
+  .tags-container {
+    max-width: 120px;
+  }
+  
+  .MuiDialog-paper {
+    margin: 16px;
+    width: calc(100% - 32px);
+  }
+  
+  .message-composer-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .messages-page {
+    padding: 12px;
+  }
+  
+  .header-section {
+    padding: 16px;
+  }
+  
+  .header-section h1 {
+    font-size: 1.75rem;
+  }
+  
+  .stats-card {
+    padding: 16px;
+  }
+  
+  .stats-card .MuiAvatar-root {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .stats-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .MuiTab-root {
+    min-height: 56px;
+    font-size: 0.9rem;
+  }
+  
+  .filters-section {
+    padding: 12px;
+  }
+  
+  .MuiDataGrid-cell {
+    padding: 8px 12px;
+  }
+  
+  .conversation-participants .MuiAvatar-root {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .last-message {
+    max-width: 150px;
+  }
+  
+  .tags-container {
+    max-width: 100px;
+  }
+  
+  .tags-container .MuiChip-root {
+    font-size: 0.65rem;
+    height: 18px;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus States */
+.MuiButton-root:focus,
+.MuiIconButton-root:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
