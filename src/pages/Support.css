@@ -140,6 +140,8 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  overflow: visible;
+  white-space: normal;
 }
 
 .ticket-number {
@@ -163,6 +165,25 @@
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  line-height: 1.2;
+}
+
+/* Styles spécifiques pour les colonnes titre et utilisateur */
+.support-page .MuiDataGrid-cell .MuiBox-root {
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+.support-page .MuiDataGrid-cell .MuiTypography-caption {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  display: block !important;
+  line-height: 1.2 !important;
 }
 
 /* User Cell */
@@ -170,6 +191,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  overflow: visible;
+  white-space: normal;
 }
 
 .user-avatar {
@@ -188,6 +211,11 @@
   font-size: 0.75rem;
   color: #666;
   text-transform: capitalize;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
+  line-height: 1.2;
 }
 
 /* Priority Chips */
