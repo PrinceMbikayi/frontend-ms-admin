@@ -162,11 +162,14 @@
 
 .messages-page .MuiDataGrid-cell {
   border-bottom: 1px solid #f0f0f0;
-  padding: 24px 28px !important;
-  line-height: 1.6 !important;
+  padding: 20px 24px !important;
+  line-height: 1.5 !important;
   font-size: 14px;
   overflow: visible !important;
   white-space: normal !important;
+  vertical-align: top !important;
+  display: flex !important;
+  align-items: flex-start !important;
 }
 
 .messages-page .MuiDataGrid-cell:focus {
@@ -176,83 +179,112 @@
 /* Conversation Cell Styles */
 .conversation-participants {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+  width: 100%;
 }
 
 .conversation-participants .MuiAvatar-root {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border: 2px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.conversation-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .conversation-info h6 {
-  margin: 0 0 4px 0;
+  margin: 0 0 6px 0;
   font-weight: 600;
   color: #333;
+  font-size: 15px;
+  line-height: 1.3;
 }
 
 .conversation-info p {
   margin: 0;
   color: #666;
-  font-size: 0.85rem;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .last-message {
-  max-width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .last-message p {
-  margin: 0 0 4px 0;
+  margin: 0;
   overflow: visible;
   text-overflow: unset;
   white-space: normal;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
 }
 
 .last-message span {
-  color: #999;
-  font-size: 0.8rem;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 /* Priority and Status Chips */
-.MuiChip-root {
+.messages-page .MuiChip-root {
   font-weight: 500;
-  border-radius: 16px;
+  border-radius: 14px;
+  font-size: 12px;
+  height: 26px;
+  margin: 2px 0;
 }
 
-.MuiChip-colorError {
+.messages-page .MuiChip-colorError {
   background-color: #ffebee;
   color: #c62828;
+  border: 1px solid #ffcdd2;
 }
 
-.MuiChip-colorWarning {
+.messages-page .MuiChip-colorWarning {
   background-color: #fff3e0;
   color: #ef6c00;
+  border: 1px solid #ffcc02;
 }
 
-.MuiChip-colorSuccess {
+.messages-page .MuiChip-colorSuccess {
   background-color: #e8f5e8;
   color: #2e7d32;
+  border: 1px solid #c8e6c9;
 }
 
-.MuiChip-colorPrimary {
+.messages-page .MuiChip-colorPrimary {
   background-color: #e3f2fd;
   color: #1565c0;
+  border: 1px solid #bbdefb;
 }
 
 /* Tags Display */
 .tags-container {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .tags-container .MuiChip-root {
-  font-size: 0.7rem;
-  height: 20px;
-  border-radius: 10px;
+  font-size: 11px;
+  height: 24px;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
 /* Badge Customization */
