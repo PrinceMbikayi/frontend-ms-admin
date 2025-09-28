@@ -153,7 +153,7 @@
 }
 
 .messages-page .MuiDataGrid-row {
-  min-height: 80px !important;
+  min-height: 100px !important;
 }
 
 .messages-page .MuiDataGrid-row:hover {
@@ -162,9 +162,11 @@
 
 .messages-page .MuiDataGrid-cell {
   border-bottom: 1px solid #f0f0f0;
-  padding: 20px 24px !important;
+  padding: 24px 28px !important;
   line-height: 1.6 !important;
   font-size: 14px;
+  overflow: visible !important;
+  white-space: normal !important;
 }
 
 .messages-page .MuiDataGrid-cell:focus {
@@ -198,14 +200,14 @@
 }
 
 .last-message {
-  max-width: 280px;
+  max-width: 400px;
 }
 
 .last-message p {
   margin: 0 0 4px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
 }
 
 .last-message span {
@@ -244,7 +246,7 @@
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
-  max-width: 180px;
+  max-width: 300px;
 }
 
 .tags-container .MuiChip-root {
