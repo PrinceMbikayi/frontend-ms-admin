@@ -153,7 +153,7 @@
 }
 
 .messages-page .MuiDataGrid-row {
-  min-height: 100px !important;
+  min-height: 72px !important;
 }
 
 .messages-page .MuiDataGrid-row:hover {
@@ -162,11 +162,10 @@
 
 .messages-page .MuiDataGrid-cell {
   border-bottom: 1px solid #f0f0f0;
-  padding: 20px 24px !important;
-  line-height: 1.5 !important;
-  font-size: 14px;
-  overflow: visible !important;
-  white-space: normal !important;
+  padding: 16px 20px !important;
+  line-height: 1.4 !important;
+  font-size: 13px;
+  overflow: hidden !important;
   vertical-align: top !important;
   display: flex !important;
   align-items: flex-start !important;
@@ -180,70 +179,82 @@
 .conversation-participants {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
   width: 100%;
 }
 
 .conversation-participants .MuiAvatar-root {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: 2px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .conversation-info {
   flex: 1;
   min-width: 0;
+  overflow: hidden;
 }
 
 .conversation-info h6 {
-  margin: 0 0 6px 0;
+  margin: 0 0 4px 0;
   font-weight: 600;
   color: #333;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .conversation-info p {
   margin: 0;
   color: #666;
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .last-message {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
+  overflow: hidden;
 }
 
 .last-message p {
   margin: 0;
-  overflow: visible;
-  text-overflow: unset;
-  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   color: #444;
-  font-size: 14px;
-  line-height: 1.4;
-  word-wrap: break-word;
+  font-size: 13px;
+  line-height: 1.3;
+  max-width: 100%;
 }
 
 .last-message span {
   color: #888;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Priority and Status Chips */
 .messages-page .MuiChip-root {
   font-weight: 500;
-  border-radius: 14px;
-  font-size: 12px;
-  height: 26px;
-  margin: 2px 0;
+  border-radius: 12px;
+  font-size: 11px;
+  height: 22px;
+  margin: 1px 0;
+  padding: 0 8px;
 }
 
 .messages-page .MuiChip-colorError {
@@ -273,18 +284,20 @@
 /* Tags Display */
 .tags-container {
   display: flex;
-  gap: 6px;
+  gap: 4px;
   flex-wrap: wrap;
   max-width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .tags-container .MuiChip-root {
-  font-size: 11px;
-  height: 24px;
-  border-radius: 12px;
+  font-size: 10px;
+  height: 20px;
+  border-radius: 10px;
   font-weight: 500;
+  padding: 0 6px;
 }
 
 /* Badge Customization */
